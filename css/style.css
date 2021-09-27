@@ -1,0 +1,360 @@
+    /* &display=swap&subset=cyrillic-ext */
+    
+    @import url("https://fonts.googleapis.com/css?family=Caramel:regular");
+    @font-face {
+        font-family: 'Basique Pro';
+        src: url('../fonts/Basique.woff2') format('woff2'), url('../fonts/Basique.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Basique Pro';
+        src: url('../fonts/Basique-Bold.woff2') format('woff2'), url('../fonts/Basique-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    /* ОБНУЛЕНИЕ СТИЛЕЙ */
+    
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: inherit;
+        font-size: inherit;
+    }
+    
+    img {
+        vertical-align: top;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    html {
+        font-size: 16px;
+        /* по умолчанию */
+    }
+    
+    body {
+        line-height: 1;
+        font-family: "Caramel", cursive;
+    }
+    
+    .wrapper {
+        min-height: 100%;
+        overflow: hidden;
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+    /* ------------GLOBAL------------------ */
+    
+    a {
+        font-family: "Basique Pro", sans-serif;
+    }
+    /* ----------HEADER----------- */
+    
+    .header {
+        border: 5px double #000;
+    }
+    
+    .logo {
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 50%;
+        outline: 15px solid #2c2525;
+        padding: 20px;
+        margin: -80px 50px 0 -115px;
+    }
+    
+    .nav {
+        border: 3px solid #341d86;
+        border-bottom: 20px solid #af7d7d;
+        max-width: 700px;
+        overflow: hidden;
+    }
+    
+    .nav ul li,
+    .nav {
+        display: inline-block;
+    }
+    
+    .navitem1,
+    .navitem2,
+    .navitem3,
+    .navitem4,
+    .navitem5,
+    .navitem6,
+    .navitem7 {
+        margin: 10px;
+        outline: 3px solid #000;
+    }
+    
+    .navitem1 {
+        padding: 5px;
+        text-decoration: line-through;
+        text-transform: lowercase;
+        font-style: oblique;
+    }
+    
+    .navitem2 {
+        display: inline;
+        margin-left: 50px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        box-shadow: inset 0 0 5px #3bc220;
+    }
+    
+    .navitem3 {
+        text-shadow: 1px 1px 2px #af7d7d;
+        font-size: 10px;
+        vertical-align: top;
+        text-decoration: overline;
+        opacity: 0.4;
+        padding-right: 40px;
+    }
+    
+    .navitem4 {
+        margin-left: -50px;
+        max-height: 100px;
+        white-space: nowrap;
+        overflow: scroll;
+        text-align: right;
+    }
+    
+    .navitem4 ul li {
+        text-indent: 30px;
+        min-width: 700px;
+        min-height: 100px;
+        display: block;
+        outline: 1px dashed #00ccff;
+    }
+    
+    .navitem5 {
+        visibility: hidden;
+    }
+    
+    .navitem5~li {
+        font-weight: 700;
+        padding: 30px;
+    }
+    
+    .navitem6 {
+        border: 5px solid #6c1481;
+        border-radius: 100% 0% 70% 30% / 30% 70% 30% 70%;
+        outline: none;
+    }
+    
+    .navitem6 a {
+        display: block;
+        color: #0c6a6d;
+        padding: 5px;
+        border: 5px dotted #6c1481;
+        border-radius: 25% 75% 74% 26% / 67% 34% 66% 33%;
+        overflow: hidden;
+    }
+    
+    .navitem7 {
+        vertical-align: top;
+        opacity: 0;
+    }
+    /* --------MAIN-------------- */
+    
+    h1 {
+        text-align: center;
+        color: #c73f3f;
+        font-size: 100px;
+    }
+    
+    .main {
+        border: 15px dashed rgba(255, 0, 0, 0.5);
+    }
+    
+    .figurebody {
+        max-width: 100%;
+        min-height: 800px;
+        text-align: center;
+    }
+    
+    .figure {
+        display: inline-block;
+        margin: 150px 0 0 0;
+        width: 500px;
+        height: 460px;
+        border-radius: 47% 53% 19% 81% / 67% 34% 66% 33%;
+        box-shadow: 5px 5px 15px 10px #000, -15px -25px 100px 30px #ff9100;
+        color: inherit;
+        background-color: #000;
+        text-shadow: -10px 100px 0 #fff, 30px 190px 0 #fff, -100px 60px 0 #fff, 150px 270px 0 #fff, -10px 290px 0 #fff, 80px 340px 0 #fff;
+    }
+    
+    .none {
+        display: none;
+    }
+    
+    .text {
+        margin: 30px 35px 2px 50px;
+        padding: 5px;
+        max-width: 1000px;
+        max-height: 600px;
+        color: #fff;
+        text-shadow: 5px 5px 2px #fff;
+        font-size: 50px;
+        border: 10px double #c3cc48;
+        text-transform: uppercase;
+        box-shadow: inset 0 0 150px 80px #6c1481;
+        border-radius: 20px 10px 5px 0;
+        word-spacing: 10px;
+        line-height: 130%;
+        text-align: justify;
+    }
+    
+    .long {
+        display: block;
+        padding: 20px;
+        color: #00ccff;
+        font-size: 150px;
+        border: 5px dotted #ff9100;
+        white-space: nowrap;
+        overflow: auto;
+        text-decoration: underline;
+    }
+    /* ---------------ADD-------------- */
+    
+    .add {
+        border: 5px solid #00ccff;
+    }
+    
+    h2,
+    .addparagraph {
+        font-size: 30px;
+        text-align: center;
+        color: #c73f3f;
+        font-family: "Basique Pro", sans-serif;
+    }
+    
+    .add1,
+    .add2,
+    .add3,
+    .add4 {
+        margin: 0 0 50px 0;
+    }
+    
+    .add1 span {
+        display: block;
+        max-width: 200px;
+        min-height: 200px;
+        border: 3px dotted #3bc220;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .add2 div {
+        opacity: .5;
+    }
+    
+    .add2 div p,
+    .add3 span {
+        font-size: 30px;
+    }
+    
+    .addparagraph1 {
+        color: #341d86;
+    }
+    
+    .addparagraph2 {
+        color: #3bc220;
+    }
+    
+    .addparagraph3 {
+        color: #ff9100;
+    }
+    
+    .add3 span {
+        display: block;
+        border: 5px solid #000;
+    }
+    
+    .add4 div {
+        color: transparent;
+        min-height: 200px;
+        border-top: 100px dashed #c73f3f;
+        border-right: 5px dotted #c3cc48;
+        border-bottom: 40px double #00ccff;
+        border-left: 15px solid #6c1481;
+    }
+    
+    .add5 {
+        text-align: center;
+    }
+    
+    .add5 a {
+        display: inline-block;
+        margin: 30px;
+        text-decoration: underline;
+        font-size: 50px;
+        text-shadow: 0 -5px 3px #a0a0a0;
+        box-shadow: 5px 5px 3px 5px #a0a0a0;
+    }
+    /* ---------------FOOTER----------- */
+    
+    .footer {
+        margin: 35px 0 0 0;
+        border: 3px solid #341d86;
+        border-radius: 50%;
+        padding: 150px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: inset 5px 15px 3px 3px #00ccff, inset -5px 15px 3px 3px #3bc220, inset -5px -15px 3px 3px #6c1481, inset 25px -15px 5px 15px #ff9100;
+    }
+    
+    .paragraph {
+        font-size: 30px;
+        font-style: oblique;
+        text-transform: capitalize;
+        line-height: 300%;
+    }
+    
+    .footerlink {
+        background-color: #e3e3e3;
+        border-radius: 30% 70% 30% 70% / 30% 70% 30% 70%;
+    }
+    
+    .footerlink a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 100px;
+        letter-spacing: 15px;
+    }
+    
+    .footerlink a span {
+        color: #000;
+    }
